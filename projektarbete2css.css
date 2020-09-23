@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  background: #eee;
+  height: auto;
+  width: 100%;
+  min-width: 300px;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+#bilder img {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px lightblue solid;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  margin: auto;
+  box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.1),
+    -30px 0px 40px rgba(0, 0, 0, 0.1);
+}
+
+#meny {
+  background: #fff;
+}
+
+#menytext {
+  display: flex;
+  flex: 0 1 40vw;
+  height: 50vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  color: lightblue;
+}
+
+#menytext h2 {
+  color: #888;
+}
+
+#menyimg {
+  background: url(programmeringb.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50vh;
+  flex: 0 1 60vw;
+  margin: 0;
+}
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: lightblue;
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+  background: #f4f4f4;
+}
+
+#header {
+  padding: 1.5rem;
+  text-align: center;
+  background: lightblue;
+  color: #fff;
+}
+
+#header h2 {
+  border-left: dotted 1px #fff;
+  border-right: dotted 1px #fff;
+  display: inline-block;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  
+}
+.undertext h3 {
+    text-align: center;
+    color: lightblue;
+}
+.undertext p {
+    text-align: center;
+    color: black;
+}
+#bilder img {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 2px lightblue solid;
+}
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 700px) {
+    #meny {
+      display: flex;
+      height: 100%;
+    }
+
+  #menytext {
+    height: 100vh;
+  }
+
+  #menyimg {
+    height: 100vh;
+  }
+}
+
+/* Screen Sizes 700px and Up */
+@media (min-width: 700px) {
+  .btn {
+    padding: 1rem 3rem;
+  }
+}
+
+* {
+  list-style: none;
+}
+
+.profile-card {
+  align-items: center;
+  min-width: 300px;
+  margin-right: 20px;
+}
+
+.profile-text {
+  padding: 10px;
+  color: black;
+  text-align: center;
+}
+
+.profile-card img {
+  width: 50%;
+  border-radius: 20px;
+  display: block;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.skills {
+  align-items: center;
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.skills li {
+  margin: 0px 0;
+}
+
+.bar {
+  background: #353b48;
+  display: block;
+  height: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #2187e7b3;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: greenyellow;
+}
+
+.html {
+  width: 85%;
+  animation: html 2s;
+}
+
+.css3 {
+  width: 65%;
+  animation: css3 2s;
+}
+
+.jquery {
+  width: 40%;
+  animation: jquery 2s;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 2s;
+}
+
+@keyframes html {
+  0% {
+      width: 0;
+  }
+}
+
+@keyframes css3 {
+  0% {
+      width: 0;
+  }
+}
+
+@keyframes jquery {
+  0% {
+      width: 0;
+  }
+}
+
+@keyframes javascript {
+  0% {
+      width: 0;
+  }
+}
+
+.mitten {
+  align-items: center;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+  margin-top: 4%;
+}
+
+.icons {
+  margin-top: 20px;
+}
+
+.länk {
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px #00000070;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+}
+
+.länk i {
+  line-height: 90px;
+  font-size: 26px;
+  transition: 0.2s linear;
+}
+
+.länk:hover i {
+  transform: scale(1.3);
+  color: #f1f1f1;
+}
+
+.länk::before {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: #3498db;
+  transform: rotate(45deg);
+  left: -110%;
+  top: 90%;
+}
+
+.länk:hover::before {
+  animation: animation 0.7s 1;
+  top: -10%;
+  left: -10%;
+}
+
+@keyframes animation {
+  0% {
+      left: -110%;
+      top: 90%;
+  }
+  50% {
+      left: 10%;
+      top: -30%;
+  }
+  100% {
+      top: -10%;
+      left: -10%;
+  }
+}
